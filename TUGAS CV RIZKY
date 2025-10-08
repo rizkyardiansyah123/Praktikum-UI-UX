@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV Mahasiswa</title>
+</head>
+<body style="font-family: Arial; background-color: #f9f9f9;">
+
+  <h1 style="text-align:center; color:#2c3e50;">Cv Mahasiswa</h1>
+  <hr style="width:60%;">
+  <img src="image/WhatsApp Image 2025-09-10 at 17.40.43_bbacb666.jpg" alt="Foto Profil" style="display:block; margin:auto; width:150px; height:150px; border-radius:50%;">
+
+  <h2>Data Pribadi</h2>
+  <p><b>Nama:</b> Muhamad Rizky Ardiansyah</p>
+  <p><b>Tempat, Tanggal Lahir:</b> Indramayu, 09 Mei 2007</p>
+  <p><b>Alamat:</b> Jln. Poncol No. 49A, Depok. Jawabarat</p>
+  <p><b>Email:</b> mragamers1712@gmail.com</p>
+  <p><b>No. HP:</b> 0819-0323-5599</p>
+
+  <h2>Pendidikan</h2>
+  <ul>
+    <li>SD Negeri Tugu 11 (2013–2019)</li>
+    <li>SMP Negeri 5 Jakarta (2019–2022)</li>
+    <li>SMK Harapan Bangsa (2022–2025)</li>
+    <li>STT Terpadu Nurul Fikri – Teknik Informatika (2025–Sekarang)</li>
+  </ul>
+
+  <h2>Keahlian</h2>
+  <ul>
+    <li>Canva</li>
+    <li>Microsoft Word</li>
+    <li>Komunikasi dan kerja tim</li>
+  </ul>
+
+  <h2>Tujuan</h2>
+  <p>
+    Saya adalah mahasiswa yang memiliki semangat belajar tinggi dan minat besar di bidang teknik informatika,
+    khususnya pengembangan web dan desain digital.
+  </p>
+
+  <hr>
+  <p style="text-align:center; color:#555;">&copy; 2025 Muhamad Rizky Ardiansyah</p>
+
+</body>
+</html>
