@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Profil Saya - Praktikum 03</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      margin: 20px;
+    }
+    fieldset {
+      border: 1px solid #bbb;
+      background-color: white;
+      padding: 15px;
+    }
+    legend {
+      font-weight: bold;
+    }
+    img {
+      border-radius: 5px;
+    }
+    table {
+      width: 75%;
+      float: right;
+    }
+    td {
+      padding: 5px;
+      vertical-align: top;
+    }
+    h2 {
+      margin: 0;
+    }
+    article {
+      clear: both;
+      margin-top: 20px;
+      text-align: justify;
+      line-height: 1.5;
+    }
+    iframe {
+      margin-top: 20px;
+      border-radius: 8px;
+    }
+    .social {
+      float: right;
+      border: 1px solid #ccc;
+      padding: 10px;
+      width: 150px;
+      background-color: #f5f5f5;
+    }
+    .social a {
+      text-decoration: none;
+      color: #0066cc;
+      display: block;
+      margin: 5px 0;
+    }
+    .gallery {
+      margin: 20px auto;
+      text-align: center;
+    }
+    .gallery img {
+      width: 100px;
+      height: 100px;
+      margin: 5px;
+      border: 1px solid #ccc;
+    }
+  </style>
+</head>
+
+<body>
+  <fieldset>
+    <legend>Muhamad Rizky Ardiansyah - 0110225087</legend>
+    <img src="download.jpg" alt="Foto Profil" style="float:left; width: 20%; margin-right: 20px;">
+
+    <table>
+      <tr>
+        <td><h2>Qin Shi Huang (秦始皇)</h2></td>
+      </tr>
+      <tr>
+        <td>Alamat: Depok, Jawa Barat</td>
+      </tr>
+      <tr>
+        <td>Prodi: Teknik Informatika</td>
+      </tr>
+      <tr>
+        <td>Angkatan: 2025</td>
+      </tr>
+      <tr>
+        <td>Email: <a href="mailto:mragamers1712@gmail.com">mragamers1712@gmail.com</a></td>
+      </tr>
+      <tr>
+        <td>Telepon: 08190325599</td>
+      </tr>
+    </table>
+
+    <article>
+      <section>
+        Qin Shi Huang adalah Raja Tiongkok pertama yang bertarung mewakili umat manusia dalam turnamen Ragnarok. Penampilannya sangat ikonik dengan penutup mata dan tato di wajahnya. Teriakan "Hao!" yang terdengar dalam video adalah salah satu ciri khasnya dalam pertarungan.
+      </section>
+      <section style="margin-top: 15px;">
+       Qin Shi Huang dalam Record of Ragnarok adalah reinterpretasi seorang tiran sejarah menjadi pahlawan tragis. Ia adalah seorang raja yang menjadi kuat bukan karena ia tidak pernah menderita, melainkan justru karena ia telah merasakan semua penderitaan di dunia dan memilih untuk menanggungnya sendirian demi melindungi rakyatnya.
+      </section>
+    </article>
+
+    <iframe width="300" height="170" src="WhatsApp Video 2025-10-16 at 19.14.03_f4e2f5c6.mp4" frameborder="0" allowfullscreen></iframe>
+
+    <fieldset class="social">
+      <legend>Social Media</legend>
+      <a href="https://www.instagram.com/xritznyz/">Instagram</a>
+      <a href="https://youtube.com/@ritzzu_ch_id?si=_pGcmMNKMoYTnqtS">YouTube</a>
+      <a href="https://www.tiktok.com/@ritzzu_?_t=ZS-90b9TFRIs0m&_r=1">TikTok</a>
+      <a href="https://t.me/Ritzz1712">Twitter</a>
+    </fieldset>
+
+    <fieldset class="gallery">
+      <legend>Gallery</legend>
+      <img src="8f19d19fbd5c8fe830ee9d5c4bc81b89.jpg" alt="Foto 1">
+      <img src="images.jpg" alt="Foto 2">
+      <img src="imagesHao.jpg" alt="Foto 3">
+      <img src="maxresdefault.jpg" alt="Foto 4">
+    </fieldset>
+  </fieldset>
+</body>
+</html>
