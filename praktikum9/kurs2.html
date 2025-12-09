@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kurs</title>
+</head>
+<body>
+    <form style="background-color: grey; width: 600px;">
+        <fieldset>
+            <legend>kurs rupiah ke mata uang asing</legend>
+                <table border="1">
+                    <thead>
+                        <th>Masukkan nilai</th>
+                        <th>Valas</th>
+                        <th>nilai rupiah</th>
+                    </thead>
+                    <tbody>
+                        <td><input type="number" id="uang"></td>
+                            <td>
+                                <select id="pilih">
+                                    <option value="USD">Dollar Amerika (USD)</option>
+                                    <option value="SGD">Dollar Singapura (SGD)</option>
+                                    <option value="EUR">Euro (EUR)</option>
+                                    <option value="JPY">Yen Jepang (JPY)</option>
+                                </select>
+                        </td>
+                        <td><input type="number" id="koversi"></td>
+                    </tbody>
+                </table>
+        </fieldset>
+    </form> 
+
+    <script>
+        let pilih = document.getElementById("pilih");
+        pilih.onchange = function(){
+            let uang = document.getElementById("uang").value;
+
+            if (pilih.value == "USD"){
+                document.getElementById("koversi").value = uang * 15000;
+            } else if (pilih.value == "SGD"){
+                document.getElementById("koversi").value = uang * 11000;
+            } else if (pilih.value == "EUR"){
+                document.getElementById("koversi").value = uang * 16000;
+            } else if (pilih.value == "JPY"){
+                document.getElementById("koversi").value = uang * 130;
+            } else {
+                document.getElementById("koversi").value = "anda tidak memilih apapun";
+            }
+        }
+    </script>
+</body>
+</html>

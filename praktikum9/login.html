@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Authentication</title>
+</head>
+<body>
+
+    <h2>Form Login</h2>
+
+    <form id="loginForm">
+        <label>Username :</label><br>
+        <input type="text" id="username" required><br><br>
+
+        <label>Password :</label><br>
+        <input type="password" id="password" required><br><br>
+
+        <button type="submit">Login</button>
+    </form>
+
+    <!-- JavaScript ditulis langsung dalam HTML -->
+    <script>
+        // Username dan password yang ditentukan
+        const USERNAME_BENAR = "ahmad2017";
+        const PASSWORD_BENAR = "integrity";
+
+        document.getElementById("loginForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // mencegah reload otomatis
+
+            let username = document.getElementById("username").value;
+            let password = document.getElementById("password").value;
+
+            if (username === USERNAME_BENAR && password === PASSWORD_BENAR) {
+                alert("Login berhasil!");
+                window.location.href = "sukses.html";
+            } else {
+                alert("Login gagal! Username atau password salah.");
+            }
+        });
+    </script>
+
+</body>
+</html>
