@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create New Seminar</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+        
+        h1 {
+            color: #333;
+            margin-bottom: 5px;
+        }
+        
+        h2 {
+            color: #555;
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+        
+        hr {
+            border: none;
+            height: 1px;
+            background-color: #ddd;
+            margin: 20px 0;
+        }
+        
+        .form-group {
+            margin-bottom: 15px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        
+        textarea {
+            height: 80px;
+            resize: vertical;
+        }
+        
+        .date-row {
+            display: flex;
+            gap: 10px;
+        }
+        
+        .date-item {
+            flex: 1;
+        }
+        
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+            margin-top: 10px;
+        }
+        
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>Kegiatan / Create New Seminar/Workshop</h1>
+    <h2>Create New Seminar</h2>
+    
+    <hr>
+    
+    <form id="seminarForm">
+        <div class="form-group">
+            <label for="kode">Kode</label>
+            <input type="text" id="kode">
+        </div>
+        
+        <div class="form-group">
+            <label for="nama">Name Kegiatan</label>
+            <input type="text" id="nama">
+        </div>
+        
+        <div class="date-row">
+            <div class="form-group date-item">
+                <label for="tgl_mulai">Tanggal Mulai</label>
+                <input type="date" id="tgl_mulai" value="">
+            </div>
+            
+            <div class="form-group date-item">
+                <label for="tgl_akhir">Tanggal Akhir</label>
+                <input type="date" id="tgl_akhir" value="">
+            </div>
+        </div>
+        
+        <div class="form-group">
+            <label for="biaya">Biaya</label>
+            <input type="number" id="biaya">
+        </div>
+        
+        <div class="form-group">
+            <label for="tempat">Tempat</label>
+            <input type="text" id="tempat">
+        </div>
+        
+        <div class="date-row">
+            <div class="form-group date-item">
+                <label for="latitude">Latitude</label>
+                <input type="text" id="latitude">
+            </div>
+            
+            <div class="form-group date-item">
+                <label for="longitude">Longitude</label>
+                <input type="text" id="longitude">
+            </div>
+        </div>
+        
+        <div class="form-group">
+            <label for="jenis">Jenis Kegiatan</label>
+            <select id="jenis">
+                <option value="">Pilih Jenis</option>
+                <option value="Seminar">Seminar</option>
+                <option value="Workshop">Workshop</option>
+                <option value="Pelatihan">Pelatihan</option>
+            </select>
+        </div>
+        
+        <div class="form-group">
+            <label for="pic">PIC</label>
+            <input type="text" id="pic">
+        </div>
+        
+        <div class="form-group">
+            <label for="deskripsi">Deskripsi</label>
+            <textarea id="deskripsi"></textarea>
+        </div>
+        
+        <button type="submit">Simpan</button>
+    </form>
+
+    <script>
+        document.getElementById('seminarForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Ambil data dari form
+            const formData = {
+                kode: document.getElementById('kode').value,
+                nama: document.getElementById('nama').value,
+                tanggalMulai: document.getElementById('tgl_mulai').value,
+                tanggalAkhir: document.getElementById('tgl_akhir').value,
+                biaya: document.getElementById('biaya').value,
+                tempat: document.getElementById('tempat').value,
+                latitude: document.getElementById('latitude').value,
+                longitude: document.getElementById('longitude').value,
+                jenis: document.getElementById('jenis').value,
+                pic: document.getElementById('pic').value,
+                deskripsi: document.getElementById('deskripsi').value
+            };
+            
+            // Validasi sederhana
+            if (!formData.kode || !formData.nama || !formData.tempat) {
+                alert('Harap isi data yang diperlukan (Kode, Nama, Tempat)');
+                return;
+            }
+            
+            // Tampilkan data
+            alert('Data berhasil disimpan!\n\n' +
+                  'Kode: ' + formData.kode + '\n' +
+                  'Nama: ' + formData.nama + '\n' +
+                  'Tanggal: ' + formData.tanggalMulai + ' s/d ' + formData.tanggalAkhir + '\n' +
+                  'Tempat: ' + formData.tempat);
+            
+            // Reset form (opsional)
+            // this.reset();
+        });
+    </script>
+</body>
+</html>
